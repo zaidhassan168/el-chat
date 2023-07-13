@@ -26,7 +26,7 @@ const ChatApp = () => {
     };
 
     try {
-
+      console.log('Sending message:', process.env.REACT_APP_API_KEY);
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
