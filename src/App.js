@@ -30,7 +30,7 @@ const ChatApp = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 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',
+          'Authorization': 'Bearer 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',
         },
         body: JSON.stringify(requestBody),
       });
