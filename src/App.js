@@ -26,11 +26,12 @@ const ChatApp = () => {
     };
 
     try {
+
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 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',
+          'Authorization': 'Bearer ' + process.env.REACT_APP_API_KEY,
         },
         body: JSON.stringify(requestBody),
       });
